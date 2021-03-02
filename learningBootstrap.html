@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Basics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootapp.css">
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-sm navbar-dark" style="background-color:#fb8500;">
+         <div class="container-fluid">
+        <a class="navbar-brand" href="#">Pegulas</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#expandme">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="expandme" >
+        <div class="navbar-nav">
+            <a href="Home" class="nav-item nav-link">Home</a>
+            <a href="Home" class="nav-item nav-link">Аbout</a>
+            <a href="Home" class="nav-item nav-link">Contact</a>
+        </div>
+        <form class="d-flex ms-auto">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg></button>
+          </form>
+    </div>
+</div>
+    </nav>
+    <div class="container">
+        <h1 class="display-1 text-center text-primary">Bootstrap Playground</h1>
+        <h2 class="display-4">Buttons <span class="badge bg-warning rounded-pill">New</span></h2>
+<div class="btn-group">
+<button type="button" class="btn btn-success">Primary</button>
+<button type="button" class="btn btn-success">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+</div>
+<button type="button" class="btn btn-outline-danger btn-lg" disabled>Danger</button>
+<button type="button" class="btn btn-outline-warning btn-sm">Warning</button>
+<button type="button" class="btn btn-outline-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+<button type="button" class="btn btn-link">Link</button>
+<button type="button" class="btn btn-primary">Updates <span class="badge bg-primary">10</span></button>
+<h2 class="display-4">Typography</h2>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, soluta nemo.
+             Quisquam voluptatibus ab dicta atque. Atque, error praesentium ut, quaerat harum facilis,
+              necessitatibus rem aut autem voluptatibus accusantium illo.
+        </p>
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            Danger! <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+              </svg> You are about to logout
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    <div class="row">
+        <div class="col-6 bg-success">I am 6 units</div>
+        <div class="col-6 bg-info">I am 6 units</div>
+    </div>
+    <div class="row">
+        <div class="col-3 bg-info">I am 3 units</div>
+        <div class="col-6 bg-success">I am 6 units</div>
+        <div class="col-3 bg-info">I am 3 units</div>
+    </div>
+    <div class="row">
+        <div class="col-2 bg-warning">I am 2 units</div>
+        <div class="col-8 bg-info">I am 8 units</div>
+        <div class="col-2 bg-warning">I am 2 units</div>
+    </div>
+    <div class="row align-items-start">
+        <div class="col-md-6 col-xl-3 bg-success">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+             Facere iusto soluta quaerat. Blanditiis quae quod cum,
+              labore magnam quisquam officia corrupti quibusdam!
+               Non quisquam voluptatibus laborum praesentium 
+               doloremque saepe nemo.</div>
+        <div class="col-md-6 col-xl-3 bg-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Facere iusto soluta quaerat. Blanditiis quae quod cum,
+                 labore magnam quisquam officia corrupti quibusdam!
+                  Non quisquam voluptatibus laborum praesentium 
+                  doloremque saepe nemo.</div>
+        <div class="col-md-6 col-xl-3 bg-success">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Facere iusto soluta quaerat. Blanditiis quae quod cum,
+                     labore magnam quisquam officia corrupti quibusdam!
+                      Non quisquam voluptatibus laborum praesentium. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea incidunt porro earum cupiditate quidem numquam consequatur et fugit maiores culpa quo velit est aliquam beatae accusantium asperiores, quasi similique quia!
+                      doloremque saepe nemo.</div>
+        <div class="col-md-6 col-xl-3 bg-info align-items-end">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Facere iusto soluta quaerat. Blanditiis quae quod cum,
+                         labore magnam quisquam officia corrupti quibusdam!
+                          Non quisquam voluptatibus laborum praesentium 
+                          doloremque saepe nemo.</div>
+    </div>
+<div class="row g-0">
+<div class="col-xl-4 col-md-6">
+<img class="img-fluid" src="https://images.unsplash.com/photo-1511920170033-f8396924c348?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Y29mZmVlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="">
+</div>
+<div class="col-xl-4 col-md-6">
+<img class="img-fluid" src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y29mZmVlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="">
+</div>
+<div class="col-xl-4 col-md-6">
+<img class="img-fluid" src="https://images.unsplash.com/photo-1498804103079-a6351b050096?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8Y29mZmVlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="">
+</div>
+</div>
+<h3>Justify content</h3>
+<div class="row border justify-content-center justify-content-lg-start justify-content-xl-between">
+<div class="col-4 bg-primary">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia omnis quos placeat autem officiis ex esse, provident, optio corporis molestiae, sunt voluptate reiciendis! Unde, reiciendis molestias? Aliquam perspiciatis veritatis atque?
+</div>
+<div class="col-4 bg-success">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia omnis quos placeat autem officiis ex esse, provident, optio corporis molestiae, sunt voluptate reiciendis! Unde, reiciendis molestias? Aliquam perspiciatis veritatis atque?
+</div>
+</div>
+<div class="container">
+<h1 class="display-2">Forms</h1>
+<form action="#nowhere">
+    <div class="row">
+    <div class="form-group col-md-6">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Email">
+    </div>
+    <div class="form-group col-md-6">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="password">
+    </div>
+    </div> 
+        <div class="row">
+        <div class="form-group col-md-6">
+            <label for="address">Street Address</label>
+            <input type="text" class="form-control" id="address" placeholder="123 Bulba Street">
+        </div>
+        <div class="form-group col-md-3">
+        <label for="zip">Zip Code</label>
+        <input type="text" class="form-control" id="zip">
+        </div>
+        <div class="form-group col-md-3">
+        <label for="city">City</label>
+        <select name="city" id="city">
+            <option value="BEL">Belgrade</option>
+            <option value="VIE">Vienna</option>
+            <option value="LUS">Lusaka</option>
+            <option value="LAG">Lagos</option>
+        </select>
+        </div>
+        
+    </div>
+    <div class="form-group">
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="tos">
+            <label class="custom-control-label" for="tos">Sign Me Up</label>
+        </div>
+        <button type="submit" class="btn btn-success">Register</button>
+    </div>
+</form>
+</div>
+<div class="row">
+    <div class="col-md-4">
+<div class="input-group">
+    <div class="input-group-prepend"></div>
+    <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+      </svg></span>
+      <input type="text" class="form-control" placeholder="Search">
+</div>
+</div>
+</div>
+    <blockquote class="blockquote text-right bg-info">
+        <p class="mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             Nemo ratione soluta odio enim architecto nihil sed blanditiis voluptates?
+              Facilis ullam architecto fugiat enim quia aliquam harum minima culpa esse alias.
+        </p>
+    <footer class="blockquote-footer">Mr. Lorem Ipsum <span class="badge bg-success">8</span></footer>
+    </blockquote>
+</div>
+<script class="img-fluid"src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script class="img-fluid"src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+</body>
+</html>
